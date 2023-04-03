@@ -23,9 +23,9 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
             )`,
       (err) => {
         if (err) {
-          console.error('rate Table already created');
+          console.log('rate Table already created');
         } else {
-          console.error('Table rate just created');
+          console.log('Table rate just created');
         }
       }
     );
