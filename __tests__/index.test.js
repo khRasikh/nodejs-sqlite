@@ -29,6 +29,7 @@ describe('Should GET & POST all data', () => {
     expect(response.body.data[0].USD).toBe(1);
     expect(response.body.data.length).toBeGreaterThan(0);
   });
+
   it('should fetch the current rates', async () => {
     const response = await request(baseURL).get('/api/rate/now');
     expect(response.statusCode).toBe(200);
