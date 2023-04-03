@@ -38,6 +38,10 @@ $ npm run dev
 $ npm run test
 ```
 
-3. The server should be avialble on [http://localhost:3000](http://localhost:3000) and its swagger UI here: [http://localhost:3000/docs](http://localhost:3000).
+3. Here's an example:
+
+![some records in the DB](tmp/example.png)
+
+4. The server should be avialble on [http://localhost:3000](http://localhost:3000) and its swagger UI here: [http://localhost:3000/docs](http://localhost:3000).
 
 Thank you.
