@@ -5,7 +5,6 @@ const DBSOURCE = './tmp/rates.db.sqlite';
 let db = new sqlite3.Database(DBSOURCE, (err) => {
   if (err) {
     console.log(err.message);
-    throw err;
   } else {
     console.log('Connected to the SQLite database.');
     //CREATE rate TABLE
