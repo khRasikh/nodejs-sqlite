@@ -8,7 +8,6 @@ const {
   updateRates,
   fetchRates,
   deleteRate,
-  deleteAllRates,
 } = require('./rates/functions.js');
 //swagger UI
 const customizedSwaggerUI = require('./swagger.js');

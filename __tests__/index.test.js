@@ -1,7 +1,7 @@
 const request = require('supertest');
 const baseURL = 'http://localhost:3000';
 
-describe('Should GET & POST all data', () => {
+describe('Should perform CRUD Operations and represent APIs all data', () => {
   let pid;
   const MockDemo = {
     BASE_CODE: 'USD',
