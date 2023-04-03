@@ -40,4 +40,4 @@ $ npm run test
 
 3. The server should be avialble on [http://localhost:3000](http://localhost:3000) and its swagger UI here: [http://localhost:3000/docs](http://localhost:3000).
 
-Thank you
+Thank you.
