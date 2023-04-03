@@ -16,7 +16,7 @@ describe('Should GET & POST all data', () => {
   it('should post data successfully', async () => {
     const response = await request(baseURL).post('/api/rate').send(MockDemo);
     pid = response.body.id;
-    console.log('pid', pid);
+    console.log(response.body);
     expect(response.statusCode).toBe(200);
   });
 
