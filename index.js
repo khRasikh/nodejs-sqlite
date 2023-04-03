@@ -18,7 +18,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //urls
-app.use('/', swaggerUi.serve, swaggerUi.setup(customizedSwaggerUI));
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(customizedSwaggerUI));
 app.post('/api/rate', storeRates);
 app.get('/api/rates', fetchRates);
 app.get('/api/rate/now', latestRates);
