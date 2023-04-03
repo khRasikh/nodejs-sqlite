@@ -4,8 +4,7 @@ const DBSOURCE = './tmp/rates.db.sqlite';
 
 let db = new sqlite3.Database(DBSOURCE, (err) => {
   if (err) {
-    console.error(err.message);
-    throw err;
+    console.log(err.message);
   } else {
     console.log('Connected to the SQLite database.');
     //CREATE rate TABLE
@@ -24,9 +23,9 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
             )`,
       (err) => {
         if (err) {
-          console.error('rate Table already created');
+          console.log('rate Table already created');
         } else {
-          console.error('Table rate just created');
+          console.log('Table rate just created');
         }
       }
     );

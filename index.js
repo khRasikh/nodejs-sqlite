@@ -8,7 +8,6 @@ const {
   updateRates,
   fetchRates,
   deleteRate,
-  deleteAllRates,
 } = require('./rates/functions.js');
 //swagger UI
 const customizedSwaggerUI = require('./swagger.js');
@@ -24,7 +23,6 @@ app.get('/api/rates', fetchRates);
 app.get('/api/rate/now', latestRates);
 app.put('/api/rate/:id', updateRates);
 app.delete('/api/rate/:id', deleteRate);
-app.delete('/api/rates', deleteAllRates);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

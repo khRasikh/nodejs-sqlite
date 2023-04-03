@@ -107,21 +107,10 @@ const deleteRate = (req, res, next) => {
   );
 };
 
-const deleteAllRates = (req, res, next) => {
-  db.run('DELETE FROM rate', function (err, result) {
-    if (err) {
-      res.status(400).json({ error: res.message });
-      return;
-    }
-    res.json({ message: 'deleted', changes: this.changes });
-  });
-};
-
 module.exports = {
   storeRates,
   fetchRates,
   latestRates,
   updateRates,
   deleteRate,
-  deleteAllRates,
 };
